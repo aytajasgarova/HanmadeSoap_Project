@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+  outline: none;
+  text-decoration: none;
+}
+
+#single-product {
+  margin: 5rem 0;
+}
+
+#single-product .single-product-content .product-img {
+  border-radius: 25px;
+}
+
+#single-product .single-product-content .product-img img {
+  border-radius: 25px;
+}
+
+#single-product .single-product-content .product-txt .product-name {
+  color: #252525;
+  font-weight: bolder;
+  font-size: 36px;
+  letter-spacing: 1.5px;
+}
+
+#single-product .single-product-content .product-txt .rating-star {
+  margin: 2rem 0;
+}
+
+#single-product .single-product-content .product-txt .rating-star li i {
+  color: #F69946;
+}
+
+#single-product .single-product-content .product-txt .rating-star li a {
+  color: #252525;
+}
+
+#single-product .single-product-content .product-txt .product-price {
+  color: #DB7137;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#single-product .single-product-content .product-txt .product-info {
+  color: #7D7D7C;
+  line-height: 1.8rem;
+}
+
+#single-product .single-product-content .product-txt h6 {
+  color: #252525;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+#single-product .single-product-content .product-txt .product-ingredient {
+  color: #7D7D7C;
+}
+
+#single-product .single-product-content .product-txt .product-form .quantity label {
+  color: #252525;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+#single-product .single-product-content .product-txt .product-form .quantity .icon-shape {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#single-product .single-product-content .product-txt .product-form .quantity .icon-sm {
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  font-weight: bold;
+}
+
+#single-product .single-product-content .product-txt .product-form .addToCart .add {
+  padding: 12px 30px;
+  background-color: #252525;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  border: none;
+}
+
+#single-product .single-product-content .product-txt .product-form .addToCart .add:hover {
+  background-color: #F69946;
+  color: white;
+}
+
+#single-product .single-product-content .product-txt .right-footer {
+  letter-spacing: 1.5px;
+  color: #252525;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#single-product .single-product-content .product-txt .right-footer-small {
+  color: #252525;
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+
+#product-information {
+  margin: 4rem 0;
+}
+
+#product-information a {
+  text-decoration: none;
+  color: #252525;
+  font-size: 18px;
+  font-weight: bold;
+  padding-right: 15px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  position: relative;
+}
+
+#product-information a::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #F69946;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#product-information a:hover::after {
+  width: 50%;
+}
+
+#product-information .collapse .card-body {
+  border: none;
+  border-bottom: 1px solid #909090;
+  border-radius: 0;
+}
+
+#product-information .collapse .card-body p {
+  color: #252525;
+  letter-spacing: 1.2px;
+}
+
+#product-information .collapse .card-body .card-img {
+  border-radius: 50%;
+}
+
+#product-information .collapse .card-body .card-img img {
+  border-radius: 50%;
+}
+
+#product-information .collapse .card-body .card-txt {
+  padding: 12px 0;
+}
+
+#product-information .collapse .card-body .card-txt .client-name {
+  color: #F69946;
+  font-weight: bold;
+}
+
+#product-information .collapse .card-body .card-txt .rating-star {
+  color: #F69946;
+}
+
+#product-information .collapse .card-body .card-txt .rating-star li i {
+  font-size: 12px;
+}
+
+#product-information .collapse:not(.show) {
+  display: none;
+}
+
+#product-information .collapsing {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+}
+
+#your-review {
+  margin: 2rem 0;
+}
+
+#your-review .your-review-content {
+  background-color: #F9F6F2;
+  padding: 4rem;
+}
+
+#your-review .your-review-content h2 {
+  font-size: 32px;
+  color: #252525;
+  font-weight: bolder;
+  letter-spacing: 1.2px;
+}
+
+#your-review .your-review-content .reviewRateYo span {
+  color: #252525;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+#your-review .your-review-content .reviewRateYo #counter {
+  background-color: black;
+  color: white;
+}
+
+#your-review .your-review-content .review-form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #909090;
+  padding: 12px;
+  font-size: 14px;
+}
+
+#your-review .your-review-content .review-message textarea {
+  border: none;
+  border-bottom: 1px solid #909090;
+  padding: 12px;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+#your-review .your-review-content .review-btn {
+  padding: 15px;
+  margin-left: 10px;
+  margin-top: 25px;
+  background-color: #db7137;
+  border: none;
+  width: 40%;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#your-review .your-review-content .review-btn:hover {
+  background-color: #252525;
+}
+
+@media only screen and (max-width: 576px) {
+  #your-review .your-review-content {
+    padding: 2rem;
+  }
+  #your-review .your-review-content .review-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=product.css.map */

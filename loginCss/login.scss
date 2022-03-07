@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap');
+
+$big-word:#DB7137;
+$main-color: #CFC098;
+$light-color: #c4b58cd8;
+$small-word: #7D7D7C;
+$star:#F69946;
+$addCart:#db7137;
+$title: rgb(117, 110, 110);
+$input-border:#909090;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    //font-family: 'Work Sans', sans-serif;
+    outline: none;
+    text-decoration: none;
+}
+
+//hero
+#hero {
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 212, 255);
+    background: linear-gradient(82deg, rgba(0, 212, 255, 1) 0%, rgba(2, 0, 36, 1) 0%, rgba(212, 209, 134, 0.8155637254901961) 51%);
+    position: absolute;
+
+    .form-box {
+        border-radius: 30px;
+        width: 380px;
+        height: 480px;
+        position: relative;
+        margin: 6% auto;
+        background: #fff;
+        padding: 5px;
+        overflow: hidden;
+
+        .button-box {
+            width: 220px;
+            margin: 35px auto;
+            position: relative;
+            box-shadow: 0 0 20px 9px $main-color;
+            border-radius: 30px;
+
+            #btn {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 110px;
+                height: 100%;
+                background: linear-gradient(to right, #CFC098, #d4cfbe);
+                border-radius: 30px;
+                transition: .5s;
+            }
+
+            .toggle-btn {
+                font-size: 14px;
+                font-weight: 600;
+                padding: 10px 30px;
+                cursor: pointer;
+                background: transparent;
+                border: 0;
+                outline: none;
+                position: relative;
+            }
+        }
+
+        .social-icons {
+            li {
+                padding-right: 15px;
+                cursor: pointer;
+                transition: .3s;
+
+                &:hover {
+                    i {
+                        color: white;
+                        background-color: $main-color;
+                    }
+                }
+
+                i {
+                    font-size: 20px;
+                    color: $main-color;
+                    border: 2px solid $main-color;
+                    border-radius: 50%;
+                    width: 35px;
+                    height: 35px;
+                    padding: 5px;
+                    text-align: center;
+                    transition: .3s;
+                }
+            }
+        }
+
+        .input-group {
+            width: 280px;
+            transition: .5s;
+            position: absolute;
+            top: 180px;
+
+            .input-field {
+                font-size: 14px;
+                width: 100%;
+                padding: 10px 0;
+                margin: 5px 0;
+                border: 0;
+                border-bottom: 1px solid $input-border;
+                outline: none;
+                background-color: transparent;
+            }
+
+            .check-box {
+                margin: 30px 10px 30px 0;
+            }
+
+            span {
+                position: relative;
+                bottom: -28px;
+                left: 5px;
+                font-size: 12px;
+                color: $input-border;
+            }
+        }
+
+        .submit-btn {
+            position: absolute;
+            top: 11rem;
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background: linear-gradient(to right, #CFC098, #d4cfbe, );
+            border: 0;
+            outline: none;
+            border-radius: 30px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        #login {
+            left: 50px;
+        }
+
+        #register {
+            left: 450px;
+        }
+    }
+}

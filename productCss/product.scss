@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+$big-word:#DB7137;
+$main-color: #CFC098;
+$light-color: #c4b58cd8;
+$small-word: #7D7D7C;
+$star:#F69946;
+$addCart:#db7137;
+$title: rgb(117, 110, 110);
+$input-border:#909090;
+$li-color: #252525;
+$review: #F9F6F2;
+
+//$transition-collapse: height .35s ease;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    //font-family: 'Work Sans', sans-serif;
+    outline: none;
+    text-decoration: none;
+}
+
+//single-product
+#single-product {
+    margin: 5rem 0;
+
+    .single-product-content {
+        .product-img {
+            border-radius: 25px;
+
+            img {
+                border-radius: 25px;
+            }
+        }
+
+        .product-txt {
+            .product-name {
+                color: $li-color;
+                font-weight: bolder;
+                font-size: 36px;
+                letter-spacing: 1.5px;
+            }
+
+            .rating-star {
+                margin: 2rem 0;
+
+                li {
+                    i {
+                        color: $star;
+                    }
+
+                    a {
+                        color: $li-color;
+                    }
+                }
+            }
+
+            .product-price {
+                color: $big-word;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .product-info {
+                color: $small-word;
+                line-height: 1.8rem;
+            }
+
+            h6 {
+                color: $li-color;
+                font-weight: bold;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                margin: 1rem 0;
+            }
+
+            .product-ingredient {
+                color: $small-word;
+            }
+
+            .product-form {
+                .quantity {
+                    label {
+                        color: $li-color;
+                        font-weight: bold;
+                        margin-right: 10px;
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        letter-spacing: 1.2px;
+                    }
+
+                    .icon-shape {
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        vertical-align: middle;
+                    }
+
+                    .icon-sm {
+                        width: 2rem;
+                        height: 2rem;
+                        background-color: white;
+                        font-weight: bold;
+                    }
+                }
+
+                .addToCart {
+                    .add {
+                        padding: 12px 30px;
+                        background-color: $li-color;
+                        color: white;
+                        font-weight: bold;
+                        border-radius: 25px;
+                        border: none;
+
+                        &:hover {
+                            background-color: $star;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            .right-footer {
+                letter-spacing: 1.5px;
+                color: $li-color;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+
+            .right-footer-small {
+                color: $li-color;
+                text-transform: uppercase;
+                padding-left: 15px;
+            }
+        }
+    }
+}
+
+//information
+#product-information {
+    margin: 4rem 0;
+
+    a {
+        text-decoration: none;
+        color: $li-color;
+        font-size: 18px;
+        font-weight: bold;
+        padding-right: 15px;
+        transition: .3s;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: $star;
+            transition: .3s;
+        }
+
+        &:hover {
+            &::after {
+                width: 50%;
+            }
+        }
+    }
+
+    .collapse {
+        .card-body {
+            border: none;
+            border-bottom: 1px solid $input-border;
+            border-radius: 0;
+
+            p {
+                color: $li-color;
+                letter-spacing: 1.2px;
+            }
+
+            .card-img {
+                border-radius: 50%;
+
+                img {
+                    border-radius: 50%;
+                }
+            }
+
+            .card-txt {
+                padding: 12px 0;
+
+                .client-name {
+                    color: $star;
+                    font-weight: bold;
+                }
+
+                .rating-star {
+                    color: $star;
+
+                    li {
+                        i {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:not(.show) {
+            display: none;
+        }
+    }
+
+    .collapsing {
+        height: 0;
+        overflow: hidden;
+        transition: (height .35s ease);
+    }
+}
+
+//your-review
+#your-review {
+    margin: 2rem 0;
+
+    .your-review-content {
+        background-color: $review;
+        padding: 4rem;
+
+        h2 {
+            font-size: 32px;
+            color: $li-color;
+            font-weight: bolder;
+            letter-spacing: 1.2px;
+        }
+
+        .reviewRateYo {
+            span {
+                color: $li-color;
+                font-weight: bold;
+                letter-spacing: 1.2px;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+
+            #counter {
+                background-color: black;
+                color: white;
+
+            }
+        }
+
+        .review-form {
+            input {
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid $input-border;
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+
+        .review-message {
+            textarea {
+                border: none;
+                border-bottom: 1px solid $input-border;
+                padding: 12px;
+                background-color: transparent;
+                font-size: 14px;
+            }
+        }
+
+        .review-btn {
+            padding: 15px;
+            margin-left: 10px;
+            margin-top: 25px;
+            background-color: $addCart;
+            border: none;
+            width: 40%;
+            border-radius: 25px;
+            color: white;
+            font-weight: bold;
+            transition: .3s;
+
+            &:hover {
+                background-color: $li-color;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:576px) {
+    #your-review {
+        .your-review-content {
+            padding: 2rem;
+
+            .review-btn {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    }
+}

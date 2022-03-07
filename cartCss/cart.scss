@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap');
+
+$big-word:#DB7137;
+$main-color: #CFC098;
+$light-color: #c4b58cd8;
+$small-word: #7D7D7C;
+$star:#F69946;
+$addCart:#db7137;
+$title: rgb(117, 110, 110);
+$input-border:#909090;
+$li-color: #252525;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    //font-family: 'Work Sans', sans-serif;
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #fffdfa;
+}
+
+
+#cart {
+    margin-top: 5rem;
+
+    /* Column headers */
+    .column-labels {
+        border-bottom: 1px solid $input-border;
+
+        label {
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            color: $li-color;
+            font-weight: bolder;
+        }
+    }
+
+    /* Product entries */
+    .product {
+        padding: 10px 0;
+        text-align: left;
+        border-bottom: 1px solid $input-border;
+
+        //overflow-x: auto;
+        .product-image {
+            text-align: center;
+            border-radius: 50%;
+            width: 100px;
+
+            img {
+                width: 100px;
+                border-radius: 50%;
+            }
+        }
+
+        .product-details {
+            color: $addCart;
+            font-weight: bold;
+            width: 130px;
+        }
+
+        .product-quantity {
+            width: 60px;
+
+            input {
+                width: 60px;
+                text-align: center;
+            }
+        }
+
+        .product-removal {
+
+            width: 20px;
+
+            .remove-product {
+                border: 0;
+                padding: 4px 8px;
+                background-color: rgb(197, 83, 83);
+                color: #fff;
+                font-size: 12px;
+                border-radius: 3px;
+
+                &:hover {
+                    background-color: rgb(139, 52, 52);
+                }
+            }
+        }
+
+        .product-price {
+            color: $li-color;
+            font-weight: bold;
+            position: relative;
+            width: 50px;
+            text-align: left;
+
+            &::after {
+                position: absolute;
+                content: '  AZN';
+            }
+        }
+
+        .product-line-price {
+            color: $li-color;
+            font-weight: bold;
+            width: 100px;
+            text-align: right;
+        }
+
+        .product-quantity {
+            width: 70px;
+            text-align: center;
+
+            input {
+                border: none;
+                border: 1px solid $input-border;
+                border-radius: 20px;
+                padding: 0 4px;
+            }
+        }
+    }
+
+
+    /* Totals section */
+    .totals {
+        display: flex;
+        flex-direction: column;
+
+        .totals-item {
+            margin-bottom: 10px;
+            text-align: right;
+
+            .totals-txt {
+                color: $addCart;
+                font-weight: bolder;
+                letter-spacing: 1.2px;
+            }
+
+            .totals-value {
+                text-align: right;
+                position: relative;
+                padding-left: 20px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .checkout {
+        justify-content: flex-end;
+
+        button {
+            border: 0;
+            margin-top: 20px;
+            width: 20%;
+            padding: 6px 15px;
+            background-color: $addCart;
+            color: #fff;
+            font-size: 14px;
+            border-radius: 18px;
+            font-weight: bold;
+            transition: .3s;
+
+            &:hover {
+                background-color: $li-color;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width:768px) {
+    #cart {
+        .shopping-cart {
+            .column-labels {
+                border: none;
+
+                label {
+                    display: none;
+                }
+            }
+
+            .product {
+                .product-image {
+                    img {
+                        width: 70px;
+                    }
+                }
+
+                .product-price {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .totals {
+            .totals-item {
+                text-align: left;
+            }
+        }
+
+        .checkout {
+            justify-content: flex-start;
+        }
+    }
+}

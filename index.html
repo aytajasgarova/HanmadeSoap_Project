@@ -25,17 +25,17 @@
                 <div class="col-1">
                     <div class="logo">
                         <a href="#">
-                            <img src="./image/logo.png" alt="">
+                            <img src="./image/bioty.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-5 col-12">
                     <nav class="nav_bar">
                         <ul class="navbar-menu list-unstyled">
-                            <li><a href="#" class="active">Ana səhifə</a></li>
-                            <li><a href="#">Haqqımızda</a></li>
-                            <li><a href="#">Məhsullar</a></li>
-                        <li><a href="#">Bizimlə əlaqə</a></li>
+                            <li><a href="index.html" class="active">Ana səhifə</a></li>
+                            <li><a href="#about">Haqqımızda</a></li>
+                            <li><a href="category.html">Məhsullar</a></li>
+                            <li><a href="#contact">Bizimlə əlaqə</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -50,7 +50,7 @@
                             </li>
                             <li class="icons-a"><a href="#"><i class="fa-solid fa-user" aria-hidden="true"></i></a></li>
                             <li class="checkout d-flex icons-a">
-                                <a href="#" aria-hidden="true">
+                                <a href="cart.html" target="_blank" aria-hidden="true">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                     <span id="checkout_items" class="checkout_items">10</span>
                                 </a>
@@ -179,6 +179,7 @@
             <div class="product text-center">
               <div class="product-img">
                 <img src="./image/aloe-vera.png" class="img-fluid" alt="">
+                <div class="discount">-10 %</div>
                   <div class="addToCart text-center">
                     <a href="#">
                       <i class="fa-solid fa-basket-shopping"></i> 
@@ -193,8 +194,8 @@
                 <li><i class="fa-solid fa-star"></i></li>
                 <li><i class="fa-solid fa-star"></i></li>
               </ul>
-              <a class="product-name" href="#">Aloe vera sabunu</a>
-              <p><del>9 AZN</del> 7 AZN</p>
+              <a class="product-name" href="product.html">Aloe vera sabunu</a>
+              <p><del>9 AZN</del> 6.30 AZN</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6" style="margin: 0 15px;">
@@ -322,7 +323,7 @@
           <div class="col-lg-7">
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Email address" aria-label="Email address" aria-describedby="button-addon2">
-              <button class="subscribe-btn" type="button" id="button-addon2">Subscribe <i class="fa-solid fa-paper-plane"></i></button>
+              <button class="subscribe-btn" type="button" id="button-addon2">Abonə ol <i class="fa-solid fa-paper-plane"></i></button>
             </div>
             </div>
           </div>
@@ -522,36 +523,45 @@
 </section>
 <!-- footer -->
 
-<footer id="footer">
+<section id="footer">
   <div class="container">
     <div class="footer-content">
-      <div class="row justify-content-around align-items-center">
-        <div class="col-lg-3">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-3 col-4">
           <div class="footer-contact">
             <ul class="list-unstyled">
-              <li><a href="tel:+994510001122"><i class="fa-solid fa-phone"></i> +994 51 000 11 22</a></li>
-              <li><a href="mailto:bioty@gmail.com"><i class="fa-solid fa-envelope"></i> bioty@gmail.com</a></li>
+              <li><a href="#Home">Ana səhifə</a></li>
+              <li><a href="#About">Haqqımızda</a></li>
+              <li><a href="#Products">Məhsullar</a></li>
+              <li><a href="#Basket">Səbət</a></li>
             </ul>
           </div>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-5">
           <div class="footer-logo">
-            <img src="./image/logo.png" class="img-fluid" style="width: 6rem;" alt="">
+            <img src="./image/bioty.png" class="img-fluid" style="width: 5rem;" alt="">
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-12 col-lg-3">
           <div class="footer-icons">
-            <ul class="list-unstyled d-flex justify-content-end">
-              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <ul class="list-unstyled contact-icons">
+              <li><h5>Əlaqə</h5></li>
+              <li><a href="tel:+994510001122"><i class="fa-solid fa-phone"></i> +994 51 000 11 22</a></li>
+              <li><a href="mailto:bioty@gmail.com"><i class="fa-solid fa-envelope"></i> bioty@gmail.com</a></li>
+            </ul>
+            <ul class="list-unstyled d-flex social-icons">
+              <li><a href="#"><i style="font-size: 16px;" class="fa-brands fa-facebook-f"></i></i></a></li>
+              <li><a href="#"><i style="font-size: 18px;" class="fa-brands fa-instagram"></i></a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
+</section>
+<footer>
+  &copy; &nbsp; 2022, bioty.az
 </footer>
-
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
